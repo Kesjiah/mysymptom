@@ -1,4 +1,10 @@
-- [x] 1. Upload project proposal to D2L and get approval from Dr. Thomas. - *Mo* **Done**
-- [x] 2. Create repository called Mysymptom in the ksu-is Github. *Denzel* **Done**
-- [x] 3. Add README page with project description to our repository. - *Mo* **Done**
-- [x] 4.
+- [x] 1. **Done** Upload project proposal to D2L and get approval from Dr. Thomas. - *Mo*
+- [x] 2. **Done** Create repository called Mysymptom in the ksu-is Github. *Denzel*
+- [x] 3. **Done** Add README page with project description to our repository. - *Mo*
+- [ ] 4. Upload existing code to Visual Studio Code and attempt to run -*Denzel*
+- [ ] 5.
+- [ ] 6.
+- [ ] 7.
+- [ ] 8.
+- [ ] 9.
+- [ ] 10.
