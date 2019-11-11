@@ -1,9 +1,9 @@
 - [x] 1. **Done** Upload project proposal to D2L and get approval from Dr. Thomas. - *Mo*
 - [x] 2. **Done** Create repository called Mysymptom in the ksu-is Github. *Denzel*
 - [x] 3. **Done** Add README page with project description to our repository. - *Mo*
-- [ ] 4. Upload existing code to Visual Studio Code and attempt to run -*Denzel*
-- [ ] 5.
-- [ ] 6.
+- [ ] 4. Upload existing code to Visual Studio Code and attempt to run. -*Denzel*
+- [ ] 5. Identify bugs that cause the code to crash and resolve them. -*Denzel*
+- [ ] 6. Determine which 
 - [ ] 7.
 - [ ] 8.
 - [ ] 9.
