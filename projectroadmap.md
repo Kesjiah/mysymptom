@@ -1,1 +1,4 @@
 - [x] 1. Upload project proposal to D2L and get approval from Dr. Thomas. - *Mo* **Done**
+- [x] 2. Create repository called Mysymptom in the ksu-is Github. *Denzel* **Done**
+- [x] 3. Add README page with project description to our repository. - *Mo* **Done**
+- [x] 4.
