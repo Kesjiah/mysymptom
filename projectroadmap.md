@@ -1,3 +1,1 @@
-1. One
-2. Two
-3. Three
+- [x] 1. Upload project proposal to D2L and get approval from Dr. Thomas. - *Mo* **Done**
