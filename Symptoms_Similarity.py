@@ -22,8 +22,7 @@ def read_glove_vecs(file):
             
     return words, word_to_vec_map
 
-words, word_to_vec_map = read_glove_vecs("C:/Users/petersde/Documents/GitHub/mysymptom/glove.6B.50d.txt")# replace file path with your location for 50-d embeddings
-
+words, word_to_vec_map = read_glove_vecs("C:/Users/petersde/Documents/GitHub/mysymptom/data/glove.6B.50d.txt")# replace file path with your location for 50-d embeddings
 # for use later on; finds the cosine similarity b/w 2 vectors
 def cosine_similarity(x, y):
     
@@ -100,7 +99,7 @@ sym_count['Count'] =  ct
 sym_count.to_csv('Symptom Counts.csv')
 
 # drop the symptoms that have fewer than 6 entries in the data set
-[frame.drop(i, inplace = True) for i in frame.index if counts[i] < 6]
+#[frame.drop(i, inplace = True) for i in frame.index if counts[i] < 6]
     
 # extract all the diseases present in the data set and make them into a list, for use later on
 lst = []
@@ -118,12 +117,24 @@ import random
 # run through the symptoms
 for i in frame.index.unique():
     # make a temporary list of the diseases associated with the symptom (actual context words)
-    a = list(frame.Disease.loc[i].values)
+    #print(frame.Disease.loc[i])
+    if type(frame.Disease.loc[i]) == str:
+        print('string')
+        a=[]
+        b= frame.Disease.loc[i]
+        a.append(b)
+        print(a)
+  
+    else:
+        a = list(frame.Disease.loc[i].values)
+    
+    
     # loop through the context words
     for j in a:
         # randomly select a disease that isn't associated with the symptom, to set as a non-context word with label 0,
         # by using the XOR operator, that finds the uncommon elements in the 2 sets
         non_context = random.choice(list(set(lst) ^ set(a)))
+        print(non_context)
         # add labels of 1 and 0 to context and non-context words repectively
         couples_and_labels.append((i, j, 1))
         couples_and_labels.append((i, non_context, 0))
@@ -164,7 +175,10 @@ embedding_matrix = np.zeros((len(dic), 50))
 for word, index in dic.items():
     # split each symptom/disease into a list of constituent words
     for i in word.split():
-        lst.append(word_to_vec_map[i]) # add the embeddings of each word in symptoms and diseases to list 'lst'
+        if i not in word_to_vec_map:
+            lst.append(np.zeros(50,))
+        else:
+            lst.append(word_to_vec_map[i]) # add the embeddings of each word in symptoms and diseases to list 'lst'
     # make an array out of the list    
     arr = np.array(lst) 
     # sum the embeddings of all words in the sentence, to get an embedding of the entire sentence
