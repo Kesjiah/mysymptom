@@ -10,3 +10,6 @@ We want to create an extension of this project that will use the symptoms to pre
 
 # Conclusion
 Unfortunately we were unable to get our code to run properly. Check out our video to explain what steps we took in attempting to get the code to run. https://youtu.be/1wuqV7c7GEk
+
+# Where to download data
+https://people.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/index.html
