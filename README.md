@@ -8,8 +8,8 @@ This is a model that can be used to predict symptoms that are closely related to
 # Our Goal
 We want to create an extension of this project that will use the symptoms to predict the disease the person is suffering from and redirect them to the associated specialist. We must keep in mind that this model is not intended to be replacement from visiting and being diagnosed by a doctor. It is more so there to help users learn of possible symptoms and diseases so that once they visit their physician, they can help point them in the right direction.
 
+# Where to download data
+http://people.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/index.html
+
 # Conclusion
 Unfortunately we were unable to get our code to run properly. Check out our video to explain what steps we took in attempting to get the code to run. https://youtu.be/1wuqV7c7GEk
-
-# Where to download data
-https://people.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/index.html
