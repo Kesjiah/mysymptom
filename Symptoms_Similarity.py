@@ -7,6 +7,9 @@
 import pandas as pd
 import numpy as np
 import re
+# import tensorflow as tf
+#import tensorflow_core
+import keras
 
 # read in the 50-dimensional GloVe vectors
 def read_glove_vecs(file):
@@ -22,7 +25,7 @@ def read_glove_vecs(file):
             
     return words, word_to_vec_map
 
-words, word_to_vec_map = read_glove_vecs("C:/Users/petersde/Documents/GitHub/mysymptom/data/glove.6B.50d.txt")# replace file path with your location for 50-d embeddings
+words, word_to_vec_map = read_glove_vecs("C:/Users/modup/OneDrive/Documents/Python/mysymptom/glove.6B.50d.txt")# replace file path with your location for 50-d embeddings
 # for use later on; finds the cosine similarity b/w 2 vectors
 def cosine_similarity(x, y):
     
@@ -117,7 +120,7 @@ import random
 # run through the symptoms
 for i in frame.index.unique():
     # make a temporary list of the diseases associated with the symptom (actual context words)
-    #print(frame.Disease.loc[i])
+    print(frame.Disease.loc[i])
     if type(frame.Disease.loc[i]) == str:
         print('string')
         a=[]
